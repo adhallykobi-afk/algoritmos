@@ -1,15 +1,16 @@
-
-/*programa :Primeiro_projeto
-  Autor:Wanderson Timoteo
-  Data:2026
- */  
-  programa{
+programa {
   funcao inicio() {
-  cadeia nomeUsuario
+ real valorCompra = 100.00
+ cadeia cupom ="FESTA10"   
 
-  escreva ("Digite seu nome:")
-  leia(nomeUsuario)
+ escreva("Valor atual: R$", valorCompra)
 
-  escreva("Olá,", nomeUsuario, "!")
+ // SE SIMPLES: só age se o cupom for válido
+ se (cupom == "FESTA10") {
+   valorCompra = valorCompra - 10.0
+   escreva("\nCupom aplicado! Desconto de R$ 10,00.")
   }
+
+  escreva("\nTotal a pagar: R$", valorCompra)
+ }
 }
