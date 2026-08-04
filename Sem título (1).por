@@ -1,16 +1,15 @@
 programa {
-  funcao inicio() {
-    inteiro idade
-  escreva("Digite sua idade:")
-  leia(idade)
+  funcao inicio() 
+  {
+    real conta, valor inteiro amigos
+    
+    escreva("Valor da conta:")
+    leia(conta)
 
-  se (idade>=18) {
-    escreva("Acesso permitido.") 
-    escreva("Bem vindo ao sistema!")
-  } senao {
-    escreva("Acesso negado.")
-    escreva("Menores nao permitidos.")
-    }
-   }
+    escreva("Quantidade de amigos:")
+    leia(amigos)
+
+    valor = conta / amigos
+    escreva("Cada amigo pagará R$", valor)
+  }
 }
-
