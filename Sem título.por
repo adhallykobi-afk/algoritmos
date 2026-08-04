@@ -1,16 +1,15 @@
 programa {
-  funcao inicio() {
- real valorCompra = 100.00
- cadeia cupom ="FESTA10"   
+  funcao inicio() 
+  {
+    real reais, cotacao, dolares
+    escreva("Digite o valor em reais:")
+    leia(reais)
 
- escreva("Valor atual: R$", valorCompra)
+    escreva("Digite a cotação do dólar:")
+    leia(cotacao)
 
- // SE SIMPLES: só age se o cupom for válido
- se (cupom == "FESTA10") {
-   valorCompra = valorCompra - 10.0
-   escreva("\nCupom aplicado! Desconto de R$ 10,00.")
+    dolares= reais/cotacao
+
+    escreva("Voce poderá comprarUS$", dolares)
   }
-
-  escreva("\nTotal a pagar: R$", valorCompra)
- }
 }
