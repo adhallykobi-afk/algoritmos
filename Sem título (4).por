@@ -2,14 +2,26 @@ programa
 {
   funcao inicio() 
   {
-    real peso, altura, imc 
+        inteiro anos
+        real bonus
 
-    escreva("Digite a altura (m):")
+        escreva("Digite a quantidade de anos trabalhados: ")
+        leia(anos)
 
-    leia(altura)
+        se (anos < 1)
+        {
+            bonus = 200
+        }
+        senao se (anos <= 3)
+        {
+            bonus = 500
+        }
+        senao
+        {
+            bonus = 1000
+        }
 
-    imc = peso / (altura * altura)
-
-    escreva("IMC = ", imc)  
+        escreva("Bônus: R$ ", bonus)
+    }
   }
 }
