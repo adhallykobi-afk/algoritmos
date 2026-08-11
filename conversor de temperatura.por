@@ -4,7 +4,7 @@ programa
   {
     real celsius, fharenheit
 
-    escreva("Digite a temperatura em Celsius: ")
+       escreva("Digite a temperatura em Celsius: ")
        leia(celsius)
 
        fharenheit = (celsius * 1.8) + 32 
